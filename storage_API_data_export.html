@@ -308,14 +308,55 @@
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between">
                                         <div class="nk-block-head-content">
-                                            <!-- <h3 class="nk-block-title page-title">Therapies</h3> -->
-                                            <p>This page design depends on the nature api response / or data that come from api so it will done in backend phase when you provide us the required apis</p>
-                                        </div><!-- .nk-block-head-content -->
+                                            <h3 class="nk-block-title page-title">Storage API Data Export</h3>
+                                          </div><!-- .nk-block-head-content -->
                                         <div class="nk-block-head-content">
+                                            <a href="#" class="btn btn-white btn-dim btn-outline-light" data-toggle="modal" data-target="#addEventPopup"><em class="icon ni ni-plus"></em><span>Add Booking</span></a>
                                         </div><!-- .nk-block-head-content -->
                                     </div><!-- .nk-block-between -->
                                 </div><!-- .nk-block-head -->
 
+                                <div class="nk-block">
+                                    <div class="row g-gs">
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6">
+                                            <div class="card card-bordered product-card">
+                                                <div class="product-thumb">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="images/slides/promo-a.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="card-inner text-center">
+                                                    <ul class="product-tags">
+                                                        <li><a href="#">Document Title</a></li>
+                                                    </ul>
+                                                    <h5 class="product-title">Classy Modern Smart watch</h5>
+                                                    <div class="product-price text-primary h5"><small class="text-muted  fs-13px">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto accusamus, totam iure numquam veniam, eaque eius rem dolorem velit ab sit ea laborum at animi excepturi impedit quia autem. Ullam!
+                                                    </small></div>
+                                                </div>
+                                            </div>
+                                        </div><!-- .col -->
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6">
+                                            <div class="card card-bordered product-card">
+                                                <div class="product-thumb">
+                                                    <a href="#">
+                                                        <img class="card-img-top" src="images/slides/promo-a.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="card-inner text-center">
+                                                    <ul class="product-tags">
+                                                        <li><a href="#">Document Title</a></li>
+                                                    </ul>
+                                                    <h5 class="product-title">Classy Modern Smart watch</h5>
+                                                    <div class="product-price text-primary h5"><small class="text-muted  fs-13px">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto accusamus, totam iure numquam veniam, eaque eius rem dolorem velit ab sit ea laborum at animi excepturi impedit quia autem. Ullam!
+                                                    </small></div>
+                                                </div>
+                                            </div>
+                                        </div><!-- .col -->
+                                        
+                                    </div>
+                                </div>
                 
                 
                         
@@ -324,6 +365,60 @@
             </div>
         </div>
 
+        <div class="modal fade" id="addEventPopup">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Files</h5>
+                        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                            <em class="icon ni ni-cross"></em>
+                        </a>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" id="addEventForm" class="form-validate is-alter">
+                            <div class="row gx-4 gy-3">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="default-01">Title</label>
+                                        <div class="form-control-wrap">
+                                            <input type="text" class="form-control" id="default-01" placeholder="Input Title">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="default-01">Discription</label>
+                                        <div class="form-control-wrap">
+                                            <input type="text" class="form-control" id="default-01" placeholder="Input placeholder">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="default-06">Default File Upload</label>
+                                        <div class="form-control-wrap">
+                                            <div class="custom-file">
+                                                <input type="file" multiple="" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-12">
+                                    <ul class="d-flex justify-content-between gx-4 mt-1">
+                                        <li class="">
+                                            <button id="addEvent" type="submit" class="btn btn-primary">Add Booking</button>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
                 <!-- content @e -->
                 <!-- footer @s -->
                 <div class="nk-footer">
