@@ -10,7 +10,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="images/cogni_green.webp">
     <!-- Page Title  -->
-    <title>Cogni™ Dashboard </title>
+    <title>AR | VR Therapy Cogni™ Dashboard</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="assets/css/dashlite.css?ver=2.9.0">
     <link id="skin-default" rel="stylesheet" href="assets/css/theme.css?ver=2.9.0">
@@ -55,6 +55,7 @@
                                 </a>
                             </li><!-- .nk-menu-item -->
                             
+                            
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
                                     <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
@@ -68,7 +69,22 @@
                                         <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Admin</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Therapst / Counseller</span></a>
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Private practice </span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Group practice</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Enterprise EAP</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">School Counsellors</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Other Behavioral Health Providers</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Therapists and Counsellors</span></a>
                                     </li>
                                     <li class="nk-menu-item">
                                         <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Enterprise EAP</span></a>
@@ -87,7 +103,7 @@
                             <li class="nk-menu-item ">
                                 <a href="booking.html" class="nk-menu-link ">
                                     <span class="nk-menu-icon"><em class="icon ni ni-calender-date"></em></span>
-                                    <span class="nk-menu-text">Booking </span>
+                                    <span class="nk-menu-text">Booking</span>
                                 </a>
                             </li><!-- .nk-menu-item -->
                             <li class="nk-menu-item ">
@@ -123,7 +139,7 @@
                             <li class="nk-menu-item">
                                 <a href="API_data_experts.html" class="nk-menu-link">
                                     <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
-                                    <span class="nk-menu-text">API | Data Experts</span>
+                                    <span class="nk-menu-text">White label | API</span>
                                 </a>
                             </li><!-- .nk-menu-item -->
                       </ul><!-- .nk-menu -->
@@ -302,22 +318,170 @@
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between">
                                         <div class="nk-block-head-content">
-                                            <!-- <h3 class="nk-block-title page-title">Therapies</h3> -->
-                                            <p>This page design depends on the nature api response / or data that come from api so it will done in backend phase when you provide us the required apis</p>
+                                            <h3 class="nk-block-title page-title">Psychosocial Treatment</h3>
                                         </div><!-- .nk-block-head-content -->
                                         <div class="nk-block-head-content">
+                                                <button type="button" class="btn btn-white btn-dim btn-outline-light" data-toggle="modal" data-target="#addTherapies"><em class="icon ni ni-plus"></em><span>Create New Treatment</span></button>
+                                          
                                         </div><!-- .nk-block-head-content -->
                                     </div><!-- .nk-block-between -->
                                 </div><!-- .nk-block-head -->
-
+                                <div class="nk-block">
+                                    <div class="row g-gs">
+                                        <div class="col-xxl-12">
+                                            <div class="col-12 div_alert">
+                                              </div>
+                                            <table class="datatable-init  nk-tb-list is-separate dataTable no-footer" data-auto-responsive="false" id="DataTables_Table_2"  aria-describedby="DataTables_Table_2_info">
+                                                <thead>
+                                                    <tr class="nk-tb-item nk-tb-head" role="row">
+                                                        <th class="nk-tb-col sorting" ><span>Exposure therapy</span></th>
+                                                        <th class="nk-tb-col  sorting" ><span>Description</span></th>
+                                                        <th class="nk-tb-col  sorting" ><span>Marketplace of Therapy and Counselling</span></th>
+                                                        <th class="nk-tb-col  sorting" ><span>Time</span></th>
+                                                        <th class="nk-tb-col  sorting" ><span>Providers who offer treatment</span></th>
+                                                        <th class="nk-tb-col  sorting" ><span>Prompt</span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="nk-tb-item odd">
+                                                        <td class="nk-tb-col"><span class="tb-lead">Exposure Therapy</span></td>
+                                                        <td class="nk-tb-col " ><span class="tb-product">
+                                                            Usually used to treat anxiety disorders, this type of therapy involves having the individual expose him.......
+                                                        </span></td>
+                                                        <td class="nk-tb-col">
+                                                            <span class="badge bg-lighter ">Circles of my life</span>
+                                                            <span class="badge bg-lighter ">Searching I AM</span>
+                                                            <span class="badge bg-lighter "> Overcoming your Fears and achieve Breakthroughs</span>
+                                                           
+                                                        </td>
+                                                        <td class="nk-tb-col"><span class="tb-lead">30 mints</span></td>
+                                                        <td class="nk-tb-col"><span class="tb-lead">Exposure Therapy</span></td>
+                                                        <td class="nk-tb-col">
+                                                            <span class="tb-lead text-center">
+                                                                <a href="#" type="button" data-toggle="modal" data-target="#modalDefault"><em class="icon ni ni-eye " style="font-size: 25px;"></em></a> 
+                                                            </span>
+                                                            <li>
+                                                                <div class="drodown">
+                                                                    <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li><a href="#" data-toggle="modal" data-target="#EditTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-delete"></em><span>Delete</span></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </td>
+                                                    </tr> 
+                                                    <tr class="nk-tb-item odd">
+                                                        <td class="nk-tb-col"><span class="tb-lead">Exposure Therapy</span></td>
+                                                        <td class="nk-tb-col " ><span class="tb-product">
+                                                            Usually used to treat anxiety disorders, this type of therapy involves having the individual expose him.......
+                                                        </span></td>
+                                                        <td class="nk-tb-col">
+                                                            <span class="badge bg-lighter ">Circles of my life</span>
+                                                            <span class="badge bg-lighter ">Searching I AM</span>
+                                                            <span class="badge bg-lighter "> Overcoming your Fears and achieve Breakthroughs</span>
+                                                           
+                                                        </td>
+                                                        <td class="nk-tb-col"><span class="tb-lead">30 mints</span></td>
+                                                        <td class="nk-tb-col"><span class="tb-lead">Exposure Therapy</span></td>
+                                                        <td class="nk-tb-col">
+                                                            <span class="tb-lead text-center">
+                                                                <a href="#" type="button" data-toggle="modal" data-target="#modalDefault"><em class="icon ni ni-eye " style="font-size: 25px;"></em></a> 
+                                                            </span>
+                                                            <li>
+                                                                <div class="drodown">
+                                                                    <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li><a href="#" data-toggle="modal" data-target="#EditTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-delete"></em><span>Delete</span></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="nk-tb-item odd">
+                                                        <td class="nk-tb-col"><span class="tb-lead">Exposure Therapy</span></td>
+                                                        <td class="nk-tb-col " ><span class="tb-product">
+                                                            Usually used to treat anxiety disorders, this type of therapy involves having the individual expose him.......
+                                                        </span></td>
+                                                        <td class="nk-tb-col">
+                                                            <span class="badge bg-lighter ">Circles of my life</span>
+                                                            <span class="badge bg-lighter ">Searching I AM</span>
+                                                            <span class="badge bg-lighter "> Overcoming your Fears and achieve Breakthroughs</span>
+                                                           
+                                                        </td>
+                                                        <td class="nk-tb-col"><span class="tb-lead">30 mints</span></td>
+                                                        <td class="nk-tb-col"><span class="tb-lead">Exposure Therapy</span></td>
+                                                        <td class="nk-tb-col">
+                                                            <span class="tb-lead text-center">
+                                                                <a href="#" type="button" data-toggle="modal" data-target="#modalDefault"><em class="icon ni ni-eye " style="font-size: 25px;"></em></a> 
+                                                            </span>
+                                                            <li>
+                                                                <div class="drodown">
+                                                                    <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li><a href="#" data-toggle="modal" data-target="#EditTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-delete"></em><span>Delete</span></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="nk-tb-item odd">
+                                                        <td class="nk-tb-col"><span class="tb-lead">Exposure Therapy</span></td>
+                                                        <td class="nk-tb-col " ><span class="tb-product">
+                                                            Usually used to treat anxiety disorders, this type of therapy involves having the individual expose him.......
+                                                        </span></td>
+                                                        <td class="nk-tb-col">
+                                                            <span class="badge bg-lighter ">Circles of my life</span>
+                                                            <span class="badge bg-lighter ">Searching I AM</span>
+                                                            <span class="badge bg-lighter "> Overcoming your Fears and achieve Breakthroughs</span>
+                                                           
+                                                        </td>
+                                                        <td class="nk-tb-col"><span class="tb-lead">30 mints</span></td>
+                                                        <td class="nk-tb-col"><span class="tb-lead">Exposure Therapy</span></td>
+                                                        <td class="nk-tb-col">
+                                                            <span class="tb-lead text-center">
+                                                                <a href="#" type="button" data-toggle="modal" data-target="#modalDefault"><em class="icon ni ni-eye " style="font-size: 25px;"></em></a> 
+                                                            </span>
+                                                            <li>
+                                                                <div class="drodown">
+                                                                    <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li><a href="#" data-toggle="modal" data-target="#EditTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-delete"></em><span>Delete</span></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                      
+                                        </div><!-- .col -->
+                                    </div><!-- .row -->
                 
                 
-                        
+                
+                
+                                    
+                                    
+                
+                                </div><!-- .nk-block -->
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
+                
                 <!-- content @e -->
                 <!-- footer @s -->
                 <div class="nk-footer">
@@ -335,7 +499,184 @@
         <!-- main @e -->
     </div>
     <!-- app-root @e -->
+
+
+
+    <!-- Modal Trigger Code -->
+
+<!-- Modal Content Code -->
+<div class="modal fade" tabindex="-1" id="modalDefault">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                <em class="icon ni ni-cross"></em>
+            </a>
+            <div class="modal-header">
+                <h5 class="modal-title">Psychosocial Treatment</h5>
+            </div>
+            <div class="modal-body">
+                <h5>Exposure therapy</h5>
+                <p>Exposure Therapy</p><br>
+                <h5>Description</h5>
+                <p>Usually used to treat anxiety disorders, this type of therapy involves having the individual expose him or herself to what it is that brings them anxiety in a safe environment (in small steps; not all at once). By exposing themselves to what they fear, they can eventually overcome their fear. The exposure can happens in different ways: gradual, which starts with what is less feared to the most feared; flooding, which means immediate exposure to the individual’s greatest fear; and systemic desensitization, which combines relaxation techniques and exposure in order to facilitate the process.</p>
+                <br><h5>Marketplace of Therapy and Counselling</h5>
+                <div>
+                    <span class="badge bg-lighter ">Circles of my life</span>
+                    <span class="badge bg-lighter ">Searching I AM</span>
+                    <span class="badge bg-lighter "> Overcoming your Fears and achieve Breakthroughs</span>
+                </div><br>
+                <h5>Time</h5>
+                <p>30 mintes</p><br>
+                <h5>Providers who offer treatment</h5>
+                <p>Exposure Therapy</p><br>
+                
+            </div>
+        </div>
+    </div>
+</div>
     
+
+ <!--Create  Modal -->
+ <div class="modal fade zoom"  id="addTherapies" tabindex="-1" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title">New Treatment</h5>
+             <a href="#" class="close" data-dismiss="modal" aria-label="Close"><em class="icon ni ni-cross"></em></a>
+          </div>
+          <div class="modal-body">
+             <form action="#">
+
+                    <div class="form-group ">
+                        <label class="form-label " for="product-name-arr">Exposure therapy</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Therapy"  required> 
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="form-label" for="product-desc">Description</label>
+                        <div class="form-control-wrap">
+                            <textarea name="description" id="product-desc" class="form-control" cols="30" rows="5" placeholder="Description" style="resize: none"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                                <label class="form-label">Marketplace of Therapy and Counselling</label>
+                                <div class="form-control-wrap">
+                                    <select class="form-select" multiple="multiple" data-placeholder="Select Multiple options" >
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        
+                                    </select>
+                                </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="form-label" for="product-price">Time</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Time"  placeholder="Enter Time"  required> 
+                        </div>
+                    </div>
+
+                    <div class="form-group  ">
+                        <label class="form-label" for="product-sale-price">Providers who offer treatment</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Therapist"  placeholder="Enter Therapist" required> 
+                        </div>
+                    </div>
+
+
+                    <div class="form-group col-md-12 text-right">
+                        <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                    </div>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+
+
+     <!--Edit  Modal -->
+ <div class="modal fade zoom"  id="EditTherapies" tabindex="-1" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title">Edit Treatment</h5>
+             <a href="#" class="close" data-dismiss="modal" aria-label="Close"><em class="icon ni ni-cross"></em></a>
+          </div>
+          <div class="modal-body">
+             <form action="#">
+
+                    <div class="form-group ">
+                        <label class="form-label " for="product-name-arr">Exposure therapy</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Therapy"  value="Exposure Therapy" required> 
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="form-label" for="product-desc">Description</label>
+                        <div class="form-control-wrap">
+                            <textarea name="description" id="product-desc" class="form-control" cols="30" rows="5" style="resize: none">
+                                Usually used to treat anxiety disorders, this type of therapy involves having the individual expose him or herself to what it is that brings them anxiety in a safe environment (in small steps; not all at once). By exposing themselves to what they fear, they can eventually overcome their fear. The exposure can happens in different ways: gradual, which starts with what is less feared to the most feared; flooding, which means immediate exposure to the individual’s greatest fear; and systemic desensitization, which combines relaxation techniques and exposure in order to facilitate the process.
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                                <label class="form-label">Marketplace of Therapy and Counselling</label>
+                                <div class="form-control-wrap">
+                                    <select class="form-select" multiple="multiple" data-placeholder="Select Multiple options" >
+                                        <option value="option_select_name" selected>Circles of my life</option>
+                                        <option value="option_select_name" selected>Searching I AM</option>
+                                        <option value="option_select_name" selected>Overcoming your Fears and achieve Breakthroughs</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        
+                                    </select>
+                                </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="form-label" for="product-price">Time</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Time"  value="30 mintes"  required> 
+                        </div>
+                    </div>
+
+                    <div class="form-group  ">
+                        <label class="form-label" for="product-sale-price">Providers who offer treatment</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Therapist"  value="Exposure Therapy " required> 
+                        </div>
+                    </div>
+
+
+                    <div class="form-group col-md-12 text-right">
+                        <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                    </div>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+
+
+
+  
+
     <!-- JavaScript -->
     <script src="assets/js/bundle.js?ver=2.9.0"></script>
     <script src="assets/js/scripts.js?ver=2.9.0"></script>

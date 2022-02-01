@@ -55,6 +55,7 @@
                                 </a>
                             </li><!-- .nk-menu-item -->
                             
+                            
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
                                     <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
@@ -68,7 +69,22 @@
                                         <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Admin</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Therapst / Counseller</span></a>
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Private practice </span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Group practice</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Enterprise EAP</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">School Counsellors</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Other Behavioral Health Providers</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Therapists and Counsellors</span></a>
                                     </li>
                                     <li class="nk-menu-item">
                                         <a href="user_list.html" class="nk-menu-link"><span class="nk-menu-text">Enterprise EAP</span></a>
@@ -123,7 +139,7 @@
                             <li class="nk-menu-item">
                                 <a href="API_data_experts.html" class="nk-menu-link">
                                     <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
-                                    <span class="nk-menu-text">API | Data Experts</span>
+                                    <span class="nk-menu-text">White label | API</span>
                                 </a>
                             </li><!-- .nk-menu-item -->
                       </ul><!-- .nk-menu -->
@@ -349,7 +365,7 @@
                                                                     <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                     <div class="dropdown-menu dropdown-menu-right">
                                                                         <ul class="link-list-opt no-bdr">
-                                                                            <li><a href="#" data-toggle="modal" data-target="#addTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
+                                                                            <li><a href="#" data-toggle="modal" data-target="#EditTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
                                                                             <li><a href="#"><em class="icon ni ni-delete"></em><span>Delete</span></a></li>
                                                                         </ul>
                                                                     </div>
@@ -379,7 +395,7 @@
                                                                     <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                     <div class="dropdown-menu dropdown-menu-right">
                                                                         <ul class="link-list-opt no-bdr">
-                                                                            <li><a href="#" data-toggle="modal" data-target="#addTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
+                                                                            <li><a href="#" data-toggle="modal" data-target="#EditTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
                                                                             <li><a href="#"><em class="icon ni ni-delete"></em><span>Delete</span></a></li>
                                                                         </ul>
                                                                     </div>
@@ -409,7 +425,7 @@
                                                                     <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                     <div class="dropdown-menu dropdown-menu-right">
                                                                         <ul class="link-list-opt no-bdr">
-                                                                            <li><a href="#" data-toggle="modal" data-target="#addTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
+                                                                            <li><a href="#" data-toggle="modal" data-target="#EditTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
                                                                             <li><a href="#"><em class="icon ni ni-delete"></em><span>Delete</span></a></li>
                                                                         </ul>
                                                                     </div>
@@ -439,7 +455,7 @@
                                                                     <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                     <div class="dropdown-menu dropdown-menu-right">
                                                                         <ul class="link-list-opt no-bdr">
-                                                                            <li><a href="#" data-toggle="modal" data-target="#addTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
+                                                                            <li><a href="#" data-toggle="modal" data-target="#EditTherapies"><em class="icon ni ni-edit" ></em><span>Edit</span></a></li>
                                                                             <li><a href="#"><em class="icon ni ni-delete"></em><span>Delete</span></a></li>
                                                                         </ul>
                                                                     </div>
@@ -532,7 +548,7 @@
              <form action="#">
 
                     <div class="form-group ">
-                        <label class="form-label " for="product-name-arr">Therapy</label>
+                        <label class="form-label " for="product-name-arr">Exposure therapy</label>
                         <div class="form-control-wrap">
                             <input type="text" class="form-control" name="Therapy"  required> 
                         </div>
@@ -545,7 +561,7 @@
                         </div>
                     </div>
                     <div class="form-group ">
-                                <label class="form-label">Title</label>
+                                <label class="form-label">Marketplace of Therapy and Counselling</label>
                                 <div class="form-control-wrap">
                                     <select class="form-select" multiple="multiple" data-placeholder="Select Multiple options" >
                                         <option value="option_select_name">Option select name</option>
@@ -571,7 +587,7 @@
                     </div>
 
                     <div class="form-group  ">
-                        <label class="form-label" for="product-sale-price">Therapist</label>
+                        <label class="form-label" for="product-sale-price">Providers who offer treatment</label>
                         <div class="form-control-wrap">
                             <input type="text" class="form-control" name="Therapist"  placeholder="Enter Therapist" required> 
                         </div>
@@ -586,6 +602,77 @@
           </div>
        </div>
     </div>
+
+
+     <!--Edit  Modal -->
+ <div class="modal fade zoom"  id="EditTherapies" tabindex="-1" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title">Edit Treatment</h5>
+             <a href="#" class="close" data-dismiss="modal" aria-label="Close"><em class="icon ni ni-cross"></em></a>
+          </div>
+          <div class="modal-body">
+             <form action="#">
+
+                    <div class="form-group ">
+                        <label class="form-label " for="product-name-arr">Exposure therapy</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Therapy"  value="Exposure Therapy" required> 
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="form-label" for="product-desc">Description</label>
+                        <div class="form-control-wrap">
+                            <textarea name="description" id="product-desc" class="form-control" cols="30" rows="5" style="resize: none">
+                                Usually used to treat anxiety disorders, this type of therapy involves having the individual expose him or herself to what it is that brings them anxiety in a safe environment (in small steps; not all at once). By exposing themselves to what they fear, they can eventually overcome their fear. The exposure can happens in different ways: gradual, which starts with what is less feared to the most feared; flooding, which means immediate exposure to the individual’s greatest fear; and systemic desensitization, which combines relaxation techniques and exposure in order to facilitate the process.
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                                <label class="form-label">Marketplace of Therapy and Counselling</label>
+                                <div class="form-control-wrap">
+                                    <select class="form-select" multiple="multiple" data-placeholder="Select Multiple options" >
+                                        <option value="option_select_name" selected>Circles of my life</option>
+                                        <option value="option_select_name" selected>Searching I AM</option>
+                                        <option value="option_select_name" selected>Overcoming your Fears and achieve Breakthroughs</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        <option value="option_select_name">Option select name</option>
+                                        
+                                    </select>
+                                </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="form-label" for="product-price">Time</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Time"  value="30 mintes"  required> 
+                        </div>
+                    </div>
+
+                    <div class="form-group  ">
+                        <label class="form-label" for="product-sale-price">Providers who offer treatment</label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" name="Therapist"  value="Exposure Therapy " required> 
+                        </div>
+                    </div>
+
+
+                    <div class="form-group col-md-12 text-right">
+                        <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                    </div>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+
 
 
   
